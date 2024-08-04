@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
+*{
+    @apply box-border;
+    /* font-family: "Jacques Francois", serif; */
+}
+
+
+.jacques-francois-regular {
+    font-family: "Jacques Francois", serif;
+  }
+  

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .large-placeholder::placeholder {
+            font-size: 1.25rem;
+            padding-bottom: 1rem;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="flex h-screen w-screen gap-3 bg-viol" class="main">
+
+        <!-- Side Panel -->
+        <div class="h-full w-56 flex flex-col gap-9" class="side-panel">
+            <!-- Logo  -->
+            <div class="logo-banner flex justify-between items-center px-5 py-5">
+                <img src="../images/circle.png" alt="Budgeto" width="50" height="50">
+                <h1 class="font-thin font-serif text-3xl text-white mr-6">Budgeto</h1>
+            </div>
+
+            <!-- Menu-Bar -->
+            <div class="menu-bar">
+                <ul class="p-7">
+                    <li class="p-3"><i class="fa-solid fa-user text-white text-2xl"></i><span class="text-2xl ml-5 font-normal font-serif text-white">Profile</span></li>
+                    <li class="p-2"><i class="fa-solid fa-chart-simple text-white text-2xl"></i><span class="text-2xl ml-5 font-normal font-serif text-white">Dashboard</span></li>
+                    <li class="p-3"><i class="fa-solid fa-gear text-white text-2xl"></i><span class="text-2xl ml-5 font-normal font-serif text-white">Settings</span></li>
+                    <li class="p-3"><i class="fa-solid fa-headset text-white text-2xl"></i><span class="text-2xl ml-5 font-normal font-serif text-white">Support</span></li>
+                </ul>
+            </div>
+
+
+            <!-- Expense container  -->
+            <div class="container w-full h-full relative mt-4 overflow-hidden">
+                <div class="money-logo w-full h-2/4 absolute z-20" style="top: 0; left: 0;">
+                    <div class="flex justify-center -rotate-12">
+                        <img src="../images/money.png" width="150" height="300" alt="">
+                    </div>
+                </div>
+                
+                <div class="div2 w-full h-3/4 p-3 absolute z-10" style="top: 80px; left: 0;">
+                    <div class="title-add h-full w-full bg-stone-200 rounded-xl flex flex-col justify-end items-center">
+                        <div class="para-content p-6 ml-3 leading-4">You can add more <span class="ml-1">expanse for your</span> <span class="ml-11">daily</span></div>
+                        <button class="add-btn mb-5 bg-nishi p-2 w-28 rounded-full">Add Money</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Main content -->
+        <div class="p-2 flex-1" class="parent-container">
+            <div class="content h-full w-full bg-white flex flex-row rounded-xl overflow-hidden">
+
+                <!-- Dashborad -->
+                <div class="dashborad border-2 border-red-500 w-3/4 rounded-tl-xl rounded-bl-xl">
+                    <div class="section1 border-2 border-yellow-200 h-16 overflow-hidden flex justify-between items-center">
+                        <h2 class="font-mono text-2xl pl-1 font-medium">Dashboard</h2>
+
+                        <!-- Search -->
+                        <div class="flex items-center justify-center">
+                            <form class="relative">
+                                <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 transform -translate-y-1/2 text-[#A6A0A0]"></i>
+                                <input type="text" placeholder="Search" class="bg-[#3D3D4E] placeholder-[#A6A0A0] text-white rounded-full w-52 h-10 pl-10 focus:outline-none large-placeholder pb-1 text-xl">
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- My cards -->
+                    <div class="section2">
+                        
+                    </div>
+                    <div class="section3"></div>
+                </div>
+
+                <!-- Transaction -->
+                <div class="transaction border-2 border-green-600 w-1/4 rounded-tr-xl rounded-br-xl"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+<div class="a">
+    <div class="b"></div>
+    <div class="c">
+        <div class="d"></div>
+    </div>
+</div>
+
+
+
+
+
+
+
